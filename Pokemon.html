@@ -5,25 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--To be able to add borders we will use a CSS -->
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid rgb(86, 43, 226);
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-    <table>
+    <h1 style="text-align:center">Pokemon</h1>
+    <table style="table-layout:center">
        <thead>
            <tr>
-               <th rowspan="2">Pokemon Name</th>
-               <th rowspan="2">Pype </th>
-               <th rowspan="2">Abilities</th>
-               <th rowspan="2">Wakness</th>
-               <th rowspan="2">Evolution</th>
+               <th style="border:2px solid DodgerBlue;">Pokemon Name</th>
+               <th rowspan="2"style="border:2px solid DodgerBlue;">Type </th>
+               <th rowspan="2"style="border:2px solid DodgerBlue;">Abilities</th>
+               <th rowspan="2"style="border:2px solid DodgerBlue;">Wakness</th>
+               <th rowspan="2"style="border:2px solid DodgerBlue;">Evolution</th>
+               <th rowspan="2"style="border:2px solid DodgerBlue;">Image</th>
            </tr>
        </thead>
        <tbody>
            <tr>
-               <td>Charmander </td>
-               <td>Fire</td>
-               <td>Blaze</td>
-               <td>Water</td>
-               <td>Charizard</td>
+               <td >Charmander </td>
+               <td  >Fire</td>
+               <td >Blaze</td>
+               <td >Water</td>
+               <td >Charizard</td>
+               <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" width="80" height="80"</td>
            </tr>
            <tr>
             <td>Squirtle</td>
@@ -31,22 +43,72 @@
             <td>Torrent</td>
             <td>Grass</td>
             <td>Blastoise</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" width="80" height="80"</td>
            </tr>
            <tr>
-            <td>Info 1</td>
-            <td>Info 1</td>
-            <td>Info 1</td>
+            <td>Wartortle</td>
+            <td>Water</td>
+            <td>Torrent</td>
+            <td>Electric</td>
+            <td>Blastoise 1</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" width="80" height="80"</td>
            </tr>
            <tr>
-            <td>Info 1</td>
-            <td>Info 1</td>
-            <td>Info 1</td>
+            <td>Pikachu</td>
+            <td>Electric</td>
+            <td>Static</td>
+            <td>Grount</td>
+            <td>Raichu</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" width="80" height="80" </td>
            </tr>
            <tr>
-            <td>Info 1</td>
-            <td>Info 1</td>
-            <td>Info 1</td>
+            <td>Nidorina</td>
+            <td>Poison</td>
+            <td>Poison Point</td>
+            <td>Psychic</td>
+            <td>Nidoqueen</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png" width="80" height="80"</td>
            </tr>
+           <tr>
+            <td>Ninetales</td>
+            <td>FIRE</td>
+            <td>Flash Fire</td>
+            <td>Water/Ground</td>
+            <td>Ninetales</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" width="80" height="80"</td>
+           </tr>
+        <tr>
+            <td>Charizard</td>
+            <td>Fire/Lying</td>
+            <td>Blaze</td>
+            <td>Electric</td>
+            <td>Charizard</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" width="80" height="80"</td>
+        </tr>
+        <tr>
+            <td>Macho</td>
+            <td>Fighting</td>
+            <td>Guts</td>
+            <td>Psychic</td>
+            <td>Machamp</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png" width="80" height="80"</td>
+        </tr>
+        <tr>
+            <td>Ponyta</td>
+            <td>Fire</td>
+            <td>Run Away</td>
+            <td>Water</td>
+            <td>Rapidash</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png" width="80" height="80" </td>
+        </tr>
+        <tr>
+            <td>Eevee</td>
+            <td>Normal</td>
+            <td>Asaptability</td>
+            <td>Fighting</td>
+            <td>Sylveon</td>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"  width="80" height="80"</td>
+        </tr>
        </tbody>
 
     </table>

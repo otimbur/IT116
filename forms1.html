@@ -5,27 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
- <!--Learn how to do forms-->
+ 
 </head>
 
 <body>
+  <section>
  <h1> First Form</h1>
- <!--when we make a form we need to sent the information -->
    <form action="/Olga">
-       <!--create a username using a lable, the label need to mach the ID!!!!-->
-      <p>
-          <label for="username">Enter Your Name:</label>
-          <input id="username" type="text" placeholder="Olga" name="username"> 
+       <!--create a username using a lable combining throug ID. UN bind with ID, for goes with id !!!!-->
+       <p>
+          <label for="username">Enter Name:</label>
+          <input id="username" type="text" placeholder="Yourname" name="username"> 
           
-
-      </p>
-      <!--create passoword-->
-      <p>
+       </p>
+      <!--create passoword using same type as username-->
+       <p>
         <label for="Password">Password:</label>
-        <input id="Password" type="text" placeholder="OlgaPassword" name="Password"> 
+        <input id="Password" type="text" placeholder="Password" name="Password"> 
+       </p>
+      <!--Add a submit button--> 
+      <button>Submit Button</button>
+      </section>
+      <sect>
+        <h1> User and Password imputs </h1>
+        <h1>Reddit Search </h1>
+        <!--To make an imput using the URL -->
+        <!--The subbit button is part of the form-->
+        <!--q is the name, with a type of search"text"-->
+          <form action="https://www.reddit.com/search/">
+           <input type="text" name="q">  
+           <button>Search reddit</button>
+          </form>
 
+          <h1> Youtube Search</h1>
+          <form action="https://www.youtube.com/results">
+           <input type="text" name="q">
+           <button>Youtube search</button> 
 
-      </p>
+          </form>
+
+          <h1>Goole Search</h1>
+          <form action="https://www.google.com/search">
+          <input type="text" name="q">
+          <button>Google Search</button>
+
+          </form>
+      </sect>
+      <!-- Creating a checkbox and Radio Buttons  -->
+      <section>
+        <h1> Creating a checkbox and Radio Buttons </h1>
+        <!-- Bind the labeel to the chechbox by the ID, it matter the order the line og code used-->
+         <form action="/birds">
+           <input type="checkbox" name="agree_tos" id="agree">
+           <label for="agree"> I agree to everything</label>
+      
+
+         </form>
+         <!-- Addin 3 radio button and binding them together by ID -->
+         <!-- value can be anything-->
+          <p>
+            <label for="s"> Small: </label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">Large</label>
+             
+          </p>
+         
+      </section>
 
 
 
