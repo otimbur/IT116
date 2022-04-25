@@ -9,14 +9,13 @@
 </head>
 
 <body>
-  <section>
- <h1> First Form</h1>
-   <form action="/Olga">
+ <section>
+   <h1> First Form</h1>
+    <form action="/Olga">
        <!--create a username using a lable combining throug ID. UN bind with ID, for goes with id !!!!-->
        <p>
           <label for="username">Enter Name:</label>
-          <input id="username" type="text" placeholder="Yourname" name="username"> 
-          
+          <input id="username" type="text" placeholder="Yourname" name="username">   
        </p>
       <!--create passoword using same type as username-->
        <p>
@@ -25,48 +24,45 @@
        </p>
       <!--Add a submit button--> 
       <button>Submit Button</button>
-  </form>  
-      </section>
-      <section>
-        <h1> User and Password imputs </h1>
-        <h1>Reddit Search </h1>
+    </form>  
+ </section>
+ <hr> 
+  <section>
+      <h1> User and Password imputs </h1>
+      <h1>Reddit Search </h1>
         <!--To make an imput using the URL -->
         <!--The subbit button has to be part of  the form-->
         <!--q is the name, with a type of search "text"-->
           <form action="https://www.reddit.com/search/">
            <input type="text" name="q">  
-           <button>Search reddit</button>
+           <button>Reddit Search</button>
           </form>
 
           <h1> Youtube Search</h1>
           <form action="https://www.youtube.com/results">
            <input type="text" name="q">
            <button>Youtube search</button> 
-
           </form>
 
           <h1>Goole Search</h1>
           <form action="https://www.google.com/search">
           <input type="text" name="q">
           <button>Google Search</button>
-
           </form>
-      </section>
+  </section>
+  <hr>
       <!-- Creating a checkbox and Radio Buttons  -->
-      <section>
+  <section>
         <h1> Creating a checkbox and Radio Buttons </h1>
         <!-- Bind the labeel to the chechbox by the ID, it matter the order the line og code used-->
-         <form action="/birds">
+        <form action="/birds">
            <input type="checkbox" name="agree_tos" id="agree">
            <label for="agree"> I agree to everything</label>
-      
-
-         </form>
+         
          <!-- Addin 3 radio button and binding them together by ID using the label and imput syntax. 
          for imput we need to represent the type(what we are creating)
          the ID to conect it with the (for) from label and give it a value 
          value in the imput  can have any imput wanted -->
-        
           <p>
             <label for="s"> Small: </label>
             <input type="radio" name="size" id="s" value="s">
@@ -79,7 +75,7 @@
              
           </p>
         <!-- Creating forms with options using a block elemtn --> 
-            <p>
+          <p>
               <label for="colors"> Favourite colors</label>
               <!-- creating a select label wih an option function-->
               <select name="colors" id="colors">
@@ -88,16 +84,42 @@
                     <option value="green">Green</option>
                      
               </select>
-            </p>
+          </p>
           <!-- Using a block element for creating a scroll bar-->  
-            <p>
+          <p>
               <!-- Using to objects: label and an input type rage-->
               <label for="sbar">ScrollBar</label>
               <input type="range" id="sbar" min="0" max="100" name="scrollbar">
-            </p>
-            <button>GO</button>
-         
+          </p>
+          <!--Type free form text in a new block -->
+          <p>
+           <!--To create the imput was used the element label and the attribute textarea -->   
+            <label for="request">Type special request</label>
+            <textarea id="request" name="text area" rows="15" cols="15" placeholder="type here"></textarea>
+          </p>
+          <button>Subbmit</button>
+        </form>  
       </section>
+  <hr>
+  <!--Section for validations-->
+  <section>
+    <!--making a label required in a text box in a new from -->
+    <form action="/work">
+      <label for="olga">TextBox</label>
+      <input type="text" name="olga" id="olga" required">
+     <!-- Creating a new label for giving specic number of chracter  -->
+     <label for=""password"></label>
+     <input type="text" name="psword" minlength="5" maxlength="10">
+
+     <!-- A block element used for email-->
+    <p>
+      <input type="email" required>
+    </p> 
+
+    <button>Validation Button</button>
+    </form>
+
+  </section>    
     
 </body>
 </html>
