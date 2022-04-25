@@ -25,7 +25,7 @@
        </p>
       <!--Add a submit button--> 
       <button>Submit Button</button>
-    </form>  
+  </form>  
       </section>
       <section>
         <h1> User and Password imputs </h1>
@@ -75,16 +75,29 @@
             <input type="radio" name="size" id="m" value="m">
 
             <label for="l">Large</label>
-            <input type-"radio" name="size" id="m" value=" "
+            <input type-"radio" name="size" id="m" value="l">
              
           </p>
+        <!-- Creating forms with options using a block elemtn --> 
+            <p>
+              <label for="colors"> Favourite colors</label>
+              <!-- creating a select label wih an option function-->
+              <select name="colors" id="colors">
+                    <option value="red"> Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                     
+              </select>
+            </p>
+          <!-- Using a block element for creating a scroll bar-->  
+            <p>
+              <!-- Using to objects: label and an input type rage-->
+              <label for="sbar">ScrollBar</label>
+              <input type="range" id="sbar" min="0" max="100" name="scrollbar">
+            </p>
+            <button>GO</button>
          
       </section>
-
-
-
-   </form>
-
     
 </body>
 </html>
