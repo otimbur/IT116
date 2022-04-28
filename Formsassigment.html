@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="formsstyle.css">
 </head>
 <body>
-    <h1>Pliss Fill the </h1>
+    <h1> Please fill out the form below  </h1>
+    
+    <form action="/Food">
+        <!-- crate the input label for users first&last name -->
+         <p>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First Name" name="lastname">
+         </p>
+
+         <p>
+            <label for="lastname">Last Name </label>
+            <input type="text" id="lastname" placeholder="Last Name" name="lastname">
+         </p>
+        <br>
+        <br>
+        <!-- the select attribute will create a drop down option for client food preferences -->
+         <label for="meat"> Which food would you like to eat</label>
+
+         <select name="meat" id="meat">
+             <option value="chicken">Chicken</option>
+             <option value="pork">Pork</option>
+             <option value="beef">Beef</option>
+              
+         </select>
+         <br>
+         <br>
+         <!-- next P will use a textarea tag to inpute users specific text -->
+         <p>
+            <textarea id="request" name="text area" rows="20" cols="20" placeholder="Insert your answer"></textarea>
+            <label for="request">Any food allergies?</label>
+         </p>
+        <!-- the sent request will be made by the button tag--> 
+        <button>Send</button>
+    </form>
 </body>
 </html>

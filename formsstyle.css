@@ -1,0 +1,37 @@
+h1{
+    color: brown;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+}
+p{
+    color: rgb(96, 15, 15);
+    font-weight: bolder;
+    text-decoration-color: brown;
+    text-decoration: black underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+form{
+    text-align: center;
+}
+select{
+    color: rgb(77, 8, 8);
+    text-decoration: solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    
+}
+
+label{
+    color: rgb(110, 58, 58);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+
+}
+body {
+    background-color: rgb(206, 203, 203);
+}
