@@ -9,109 +9,143 @@
 </head>
 
 <body>
+  <!-- The next section will create the imput for username and passowrd with forms-->
  <section>
    <h1> First Form</h1>
     <form action="/Olga">
-       <!--create a username using a lable combining throug ID. UN bind with ID, for goes with id !!!!-->
+       <!--Next paragraph will create the username. 
+       Using the label for attribute it will create a focuse on the id input.
+       The input type has to be a text and it was used a placeholder to give the user information needed -->
        <p>
-          <label for="username">Enter Name:</label>
-          <input id="username" type="text" placeholder="Yourname" name="username">   
+          <label for="username">Name:</label>
+          <input id="username" type="text" placeholder="Username" name="username">   
        </p>
-      <!--create passoword using same type as username-->
+      <!--Next p will use the same strucutre as above for the password input-->
        <p>
         <label for="Password">Password:</label>
         <input id="Password" type="text" placeholder="Password" name="Password"> 
        </p>
-      <!--Add a submit button--> 
+      <!-- The submission of the username and password will be create with the interactive element button--> 
       <button>Submit Button</button>
     </form>  
  </section>
- <hr> 
+        <hr> 
+
+
+ <!--Creating a section with research imputs based on URL for Reddit, google, youtube-->
   <section>
       <h1> User and Password imputs </h1>
       <h1>Reddit Search </h1>
-        <!--To make an imput using the URL -->
-        <!--The subbit button has to be part of  the form-->
-        <!--q is the name, with a type of search "text"-->
+        <!-- Creating a form for accessing a URL using the acction atribute and using an 
+        input for the user to enter a text search and a button tag to send the action to the URL-->
           <form action="https://www.reddit.com/search/">
            <input type="text" name="q">  
+           
            <button>Reddit Search</button>
           </form>
-
+         
           <h1> Youtube Search</h1>
+
           <form action="https://www.youtube.com/results">
            <input type="text" name="q">
+
            <button>Youtube search</button> 
           </form>
 
           <h1>Goole Search</h1>
+
           <form action="https://www.google.com/search">
           <input type="text" name="q">
+
           <button>Google Search</button>
           </form>
   </section>
-  <hr>
-      <!-- Creating a checkbox and Radio Buttons  -->
+        <hr>
+     
+
+    <!-- Creating a Checkbox and Radio Buttons  using a action attribute -->
   <section>
-        <h1> Creating a checkbox and Radio Buttons </h1>
-        <!-- Bind the labeel to the chechbox by the ID, it matter the order the line og code used-->
-        <form action="/birds">
+        <h1> Creating a Checkbox and Radio Buttons </h1>
+        
+        <!--The form element will create a checkbox letting the user choose from 2 options.
+             In order to create it, we will use a input type"checkbox", and an ID that has to mach the label attribute (for).
+             Using this order of writing the code, the label tex will come after the checkbox-->
+     <form action="/hello">
            <input type="checkbox" name="agree_tos" id="agree">
            <label for="agree"> I agree to everything</label>
          
-         <!-- Addin 3 radio button and binding them together by ID using the label and imput syntax. 
+         <!-- In the next p it will be created  3 radio button and binding them together 
+         by ID using the label and imput syntax. 
          for imput we need to represent the type(what we are creating)
-         the ID to conect it with the (for) from label and give it a value 
-         value in the imput  can have any imput wanted -->
+         the ID to conect it with the (for) from label and give it a value. 
+         Value in the imput  can have any imput wanted -->
           <p>
-            <label for="s"> Small: </label>
             <input type="radio" name="size" id="s" value="s">
+            <label for="s">Small</label>
+            
 
-            <label for="m">Medium</label>
+            
             <input type="radio" name="size" id="m" value="m">
+            <label for="m">Medium</label>
 
+           
+            <input type="radio" name="size" id="m" value="l">
             <label for="l">Large</label>
-            <input type-"radio" name="size" id="m" value="l">
              
           </p>
-        <!-- Creating forms with options using a block elemtn --> 
+        <!-- In the next p it will be created a drop-down list using
+         the label f(or) to specify the id of the select tag. -->
           <p>
               <label for="colors"> Favourite colors</label>
-              <!-- creating a select label wih an option function-->
+
+               
+              <!--The tag will create the drop down list-->
               <select name="colors" id="colors">
+                  <!--option tag will define the drop down--> 
                     <option value="red"> Red</option>
                     <option value="blue">Blue</option>
                     <option value="green">Green</option>
                      
               </select>
           </p>
-          <!-- Using a block element for creating a scroll bar-->  
+
+          <!--The next p will  create a scroll bar using  a block element -->  
           <p>
-              <!-- Using to objects: label and an input type rage-->
-              <label for="sbar">ScrollBar</label>
+              <!--To create a scroll bar is used an label with for attribut to connect with the id
+                AND an input type range  with min and max values-->
+              <label for="sbar">Scroll Bar</label>
               <input type="range" id="sbar" min="0" max="100" name="scrollbar">
           </p>
-          <!--Type free form text in a new block -->
+          
+            <!--The next p will create an area for the user to input text.
+            For that, it was created a label to determine the reason for the text area
+            And the object was created using a text area tag connected through the for attribut&id
+            it is necessary to define the measurements for the area in rows and columns.
+            placeholder will define where the text will be inserted. -->
+
           <p>
-           <!--To create the imput was used the element label and the attribute textarea -->   
-            <label for="request">Type special request</label>
             <textarea id="request" name="text area" rows="15" cols="15" placeholder="type here"></textarea>
+
+            <label for="request">Type special request</label>
           </p>
-          <button>Subbmit</button>
+          <button>Submit</button>
+
         </form>  
       </section>
   <hr>
+
   <!--Section for validations-->
   <section>
-    <!--making a label required in a text box in a new from -->
+    <!--For the next form it will specify an action attribute to specify where to send the data -->
     <form action="/work">
-      <label for="olga">TextBox</label>
+      <!-- the next input will define a required text needed from the user -->
+      <label for="olga"> Username</label>
       <input type="text" name="olga" id="olga" required">
-     <!-- Creating a new label for giving specic number of chracter  -->
+     <!-- The input would require a specific number of character for the text   -->
      <label for=""password"></label>
      <input type="text" name="psword" minlength="5" maxlength="10">
 
-     <!-- A block element used for email-->
+     <!-- A block element used for email that would require specific attribute "@"-->
     <p>
       <input type="email" required>
     </p> 

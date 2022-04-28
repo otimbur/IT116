@@ -1,0 +1,26 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-weight: 400;
+    font-size: 125px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+
+    color:darkblue;
+    text-align:center;
+    text-decoration: double;
+    font-weight: 400;
+    text-decoration: pink underline;
+    
+}
+h3{
+   text-decoration: orange underline;
+}
+
+p{
+    line-height: 1.5;
+    letter-spacing: 0.2ex;
+}
