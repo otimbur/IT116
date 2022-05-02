@@ -1,0 +1,40 @@
+/*  (*) the universal selector is going to select everything on the HTML page   
+    color:rgb(72, 62, 64);
+    background-color: rgb(174, 218, 174);
+}
+*/ 
+/*The class selector is used for the background */
+body{
+    background-color: rgb(202, 236, 202);
+}
+/* Element selector */
+button{
+    font-size: large;
+
+}
+
+/*Multimpleelement  selectors used for the headers color  */
+h1, h2{
+    color: brown;
+}
+
+/* Links by ID with (# sign) to change the background and color for the sign up button */
+#signup{
+    background-color: bisque;
+    color: rgb(24, 89, 69);
+
+}
+
+/*Class selectors used to change the color for SEC!*/
+.tag{
+    color: rgb(20, 47, 38);
+}
+/* decendent selectors used to change the color of the anchor element in the body */
+.post a{
+   color: purple;
+
+}
+/*decensendor selecters */
+footer a{
+    color: rgb(151, 110, 190);
+}
