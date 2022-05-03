@@ -1,0 +1,26 @@
+.crimson {
+    color: crimson;
+}
+.greenish {
+    color:rgb(12, 109, 12);
+}
+.yellowish {
+    color: rgb(225, 225, 109);
+}
+.red {
+    color: red;
+}
+.burnt {
+    color: orange;
+}
+ol{
+    font-size: large;
+}
+#yes {
+    background-color: green;
+    color: white;
+}
+#no{
+    background-color: red;
+    color: white;
+}

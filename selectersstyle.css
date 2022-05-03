@@ -34,7 +34,29 @@ h1, h2{
    color: purple;
 
 }
-/*decensendor selecters */
-footer a{
+/*decensendor selecters (>) */
+footer > a{
     color: rgb(151, 110, 190);
+}
+/*  */
+a[href*="google"]{
+    color: darkorange;
+}
+/*sudo classes*/
+button:hover{
+    background-color: red;
+    color: aquamarine;
+}
+/* nested psudo classes*/
+.post button:active{
+    background-color: rgb(103, 163, 14);
+
+}
+/*psudo elements */
+h2::first-letter{
+    font-size: 50px;
+}
+/*psudo element, paragraph element*/
+p::first-line{
+    color: brown;
 }
