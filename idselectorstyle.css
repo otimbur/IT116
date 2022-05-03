@@ -1,3 +1,5 @@
+/* cclass selectors*/
+
 .crimson {
     color: crimson;
 }
@@ -16,6 +18,7 @@
 ol{
     font-size: large;
 }
+/*Id selectors*/
 #yes {
     background-color: green;
     color: white;
