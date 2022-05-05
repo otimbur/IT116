@@ -1,0 +1,14 @@
+h1 > a{
+    color: red;
+}
+/* descenden selector used to style the schools link*/
+#school  a{
+    color: pink;
+}
+#subject a{
+    color: violet;
+}
+/* using hover to add color to the link*/
+p : hover {
+    color: rgb(129, 96, 160);
+}
