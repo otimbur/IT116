@@ -5,51 +5,60 @@
 */ 
 /*The class selector is used for the background */
 body{
-    background-color: rgb(202, 236, 202);
+    background: #eee2dc; ;
 }
 /* Element selector */
 button{
-    font-size: large;
+    font-size: medium;
 
 }
+label{
+    color: #ac3b61;
+    font-size: large;
+    font-weight: bold;
+    font-family:Georgia,'Times New Roman',Times,serif;
+}
 
-/*Multimpleelement  selectors used for the headers color  */
+/*Multi element  selectors used for the headers color  */
 h1, h2{
-    color: brown;
+    color: #ac3b61;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Links by ID with (# sign) to change the background and color for the sign up button */
 #signup{
-    background-color: bisque;
-    color: rgb(24, 89, 69);
+    background-color: #edc7b7;
+    color: #ac3b61;
 
 }
 
-/*Class selectors used to change the color for SEC!*/
+/*Class selectors used */
 .tag{
     color: rgb(20, 47, 38);
 }
 /* decendent selectors used to change the color of the anchor element in the body */
 .post a{
-   color: purple;
+   color: #123c69;
+   font-size:larger;
+   font-weight: bold;
 
 }
 /*decensendor selecters (>) */
 footer > a{
-    color: rgb(151, 110, 190);
+    color: #123c69;
 }
 /*  */
 a[href*="google"]{
-    color: darkorange;
+    color: #bab2b5;
 }
 /*sudo classes*/
 button:hover{
-    background-color: red;
-    color: aquamarine;
+    background-color: #edc7b7;
+    color: #ac3b61;
 }
 /* nested psudo classes*/
 .post button:active{
-    background-color: rgb(103, 163, 14);
+    background-color:#eee2dc;
 
 }
 /*psudo elements */
@@ -58,5 +67,4 @@ h2::first-letter{
 }
 /*psudo element, paragraph element*/
 p::first-line{
-    color: brown;
-}
+    color: #ac3b61;
