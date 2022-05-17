@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moldova</title>
+    <!--Add the 3rd party link for css-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="css/CSSDescendentsExercise.css">
+</head>
+<body>
+    <!-- create a navigation bar-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- create a fluid container-->
+     <div class="container-fluid">
+
+      <!-- add the brand logo -->
+       <a class="navbar-brand" href="https://www.instagram.com/moldovaorg/">
+         <img src="image/picture1.png" alt="" width="30" height="24">
+       </a>
+
+      <!--Createing a hamburger menue  with a navbar-toggler class-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+      <!-- create an unorder list with an id refrecind the collapse class in the button-->
+      <div class="collapse navbar-collapse" id="navbar1">
+
+             <!--using flex will push everything that is not part of the nav bar to the end of the screen-->
+            <ul class="navbar-nav d-flex me-auto">
+
+                <li class="nav-itme active">
+                   <a class="nav-link" href="https://en.wikipedia.org/wiki/Moldova">Wikipedia</a>
+                </li>
+
+                <li class="nav-itme active">
+                  <a class="nav-link" href="https://www.dreamstime.com/photos-images/moldova.html">Photo Gallery</a>
+                </li>
+
+                <li class="nav-itme active">
+                  <a class="nav-link" href="https://www.thecrazytourist.com/15-best-places-visit-moldova/">Touristic places</a>
+                </li>
+
+                <!-- next part of the list is going to create unother list of drop-down itmes-->
+                <li class="nav-idem dropdown">
+                    
+                   <!-- Crtae a class with dropdown menue-->
+                   <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Dropdown</a>
+
+                   <!-- add the drop down items. Create another unorder list-->
+                    <ul class="dropdown-menu">
+
+                       <a href="#" class="dropdown-item">One tow</a>
+                  
+                      <a href="#" class="dropdown-item">Two</a>
+                   
+                      <a href="#" class="dropdown-item">Three</a>
+                    </ul>
+                </li>
+
+             </ul>
+        
+            <!-- use flex class to create a search bar to align correctly-->
+            <form class="d-flex" action="/testing">
+               <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-danger" type="submit">Search</button>
+
+            </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <br>
+  <br>
+   <!--Addig a container with card to be able to see it on the screen and to make the content 
+       adjustable for diffrent screen type-->
+    
+       <section>
+
+          <div class="container card">
+              <!-- Addig a header using bootstrap header class-->
+              <h1 class="display-1 text-primary text-center"> Moldova's flag colors</h1>
+              
+              <button type="button" class="btn btn-primary"> Blue</button>
+              <button type="button" class="btn btn-warning"> Yellow</button>
+              <button type="button" class="btn btn-danger"> Red</button>
+              <!-- creating an outline button using bootstrap-->
+
+              <button type="button" class="btn btn-outline-danger">Warning</button>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- Desplay text using boot strap class desplay-4-->
+             <h2 class="display-4 text-center"> The capital is <a id="name">Chisinau</a></h2>
+             <p>This is modern and friendly place is Moldova’s biggest city and serves as its capital. 
+               Chisinau has loads of green space, parks, and historical buildings. It feels like a city with space.  
+               There’s also no shortage of restaurants, art galleries, nightclubs, spas, and casinos!  
+               You’ll want to visit Pushkin Park and the orange pyramid at the World War II memorial. 
+               You’ll find marvellous frescoes in the Nativity Cathedral, and if that’s not for you, 
+               check out the stalls of the local modern artists in the art market.</p>
+               <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/04/Chisinau-Moldova-768x577.jpg">
+
+        <br>
+        <br>
+        
+           <!--Group of headers buttons-->
+           <h3 class="display-4 text-center">Biggest cities</h3>
+              <div class="btn-group">
+                 <button class="btn btn-primary" >Chisinau</button>
+                 <button class="btn btn-primary" >Balti</button>
+                 <button class="btn btn-primary" >Tiraspol</button>
+              </div> 
+         
+        <br>
+        <br>
+        
+        <!--Addig a well-know text is used a blockquote-->
+          <blockquote class="blockquote text-center bg-light">
+            <p class="mb-2"> Say thank you in Romannian:</p>
+            <footer class="blockquote-footer">Multumesc</footer>
+          </blockquote>
+
+        </div>  
+      
+       </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"    crossorigin="anonymous"></script>
+</body>
+</html>
